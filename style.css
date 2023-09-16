@@ -1,1 +1,52 @@
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+	position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
+li {
+    display: inline;
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    text-decoration: none;
+  }
+
+.link:hover {
+    background-color: #555;
+    color: white;
+  }
+
+.nav {
+	padding:0;
+	margin: 0;
+	display: inline;
+	align-self: left;
+	position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+	font-family: Lato, sans-serif;
+	margin: 0;
+	padding: 1rem;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(20, 20, 20, 1);
+}
+
+p {
+  color: white;
+}
