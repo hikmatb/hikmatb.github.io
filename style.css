@@ -1,24 +1,196 @@
-ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #dddddd;
-	position: fixed;
-    top: 0;
-    width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mali', cursive;
+}
+
+.bubbles {
+  height: 100%;
+  width: 100%;
+  top:7%;
+  background: linear-gradient(180deg, #edd491, 5%, #eb9b34, 50%, #030423);
+  position: absolute;
+}
+
+.bubbles h1 {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 888;
+  text-transform: uppercase;
+}
+.bubbles h2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #fff;
+  font-weight: 888;
+  text-transform: uppercase;
+}
+.bubbles .github {
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #fff;
+  font-weight: 888;
+  text-decoration: none;
+}
+.bubbles .linkedin {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #fff;
+  font-weight: 888;
+  text-decoration: none;
+}
+a:visited {
+  color: cadetblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:link {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+.bubbles div {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: 4s linear infinite;
+}
+div .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+.bubbles div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.bubbles div:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+.bubbles div:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation: animate 3s linear infinite;
+}
+.bubbles div:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+}
+.bubbles div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+.bubbles div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+}
+.bubbles div:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.bubbles div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.bubbles div:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+.bubbles div:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+.bubbles div:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.bubbles div:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+.bubbles div:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.bubbles div:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+}
+.bubbles div:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #edd491;
+  position: fixed;
+  top: 0;
+  width: 100%;
   }
 
 li {
-    display: inline;
-    float: left;
+  display: inline;
+  float: left;
 }
 
-a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-    text-decoration: none;
+li a {
+  display: block;
+  padding: 14px 16px;
+  background-color: #edd491;
+  text-decoration: none;
   }
 
 .link:hover {
@@ -29,24 +201,15 @@ a {
 .nav {
 	padding:0;
 	margin: 0;
-	display: inline;
+	display: flex;
 	align-self: left;
 	position: fixed;
-    top: 0;
-    width: 100%;
+  top: 0;
+  width: 100%;
 }
 
 body {
-	font-family: Lato, sans-serif;
-	margin: 0;
 	padding: 1rem;
-	min-height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	background-color: black;
-}
-
-p {
-  color: white;
 }
