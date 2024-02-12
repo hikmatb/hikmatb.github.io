@@ -1,17 +1,22 @@
-ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #dddddd;
-	position: fixed;
-    top: 0;
-    width: 100%;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Mali', cursive;
   }
 
-li {
-    display: inline;
-    float: left;
+h2 {
+	color: #fff;
+}
+
+a:visited {
+	color: cadetblue;
+	background-color: transparent;
+	text-decoration: none;
+  }
+a:link {
+	color: #fff;
+	background-color: transparent;
+	text-decoration: none;
 }
 
 a {
@@ -41,14 +46,13 @@ a {
 }
 
 body {
-	font-family: Lato, sans-serif;
 	margin: 0;
 	padding: 1rem;
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #dddddd;
+	background: linear-gradient(180deg, #edd491, 5%, #eb9b34, 50%, #030423);
 }
 
 img {
@@ -68,6 +72,7 @@ ul {
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	max-width: 100%;
 	width: 70rem;
+	position:static;
 }
 
 figure {
